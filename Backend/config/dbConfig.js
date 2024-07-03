@@ -1,5 +1,4 @@
 import mongoose from 'mongoose';
-// mongoose.connect(process.env.MONGODB_CONNECTION_STRING);
 
 const connection=async()=>{
     try{
