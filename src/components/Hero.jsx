@@ -4,6 +4,8 @@ import { HERO_CONTENT } from '../constants'
 import profilePic from '../assets/supriyaSingh.jpeg'
 import { TbCoinTaka } from 'react-icons/tb'
 
+
+
 const container=(delay)=>({
   hidden:{x:-100,opacity:0},
   visible:{

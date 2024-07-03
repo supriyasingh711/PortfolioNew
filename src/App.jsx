@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -6,7 +6,9 @@ import Technologies from './components/Technologies'
 import Experiences from './components/Experiences'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
+import Loader from './components/Loader'
 const App = () => {
+  const [showLoading,setShowLoading]=useState(true);
   return (
     <div className='overflow-x-hidden text-white text-black-300 antialised slec selection:bg-cyan-300 selection:text-cyan-900'>
       <div className='fixed top-0 -z-10 h-full w-full'>
@@ -14,6 +16,7 @@ const App = () => {
 
       </div>
       <div className='container mx-auto px-8'>
+        {showLoading? <Loader/>:null}
       <Navbar/>
       <Hero/>
       <About/>

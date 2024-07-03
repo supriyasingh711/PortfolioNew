@@ -7,3 +7,47 @@
 :root{
   font-family: "Inter",sans-serif;
 }
+/* loader animation
+ */
+ .k{
+  animation: k is infinite;
+ }
+ @keyframe k{
+  0%{
+    opacity:1;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 0.5;
+  }
+ }
+ .s{
+  animation: s is infinite;
+ }
+ @keyframe s{
+  0%{
+    opacity:0.5;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0.5;
+  }
+ }
+ .r{
+  animation: r is infinite;
+ }
+ @keyframe r{
+  0%{
+    opacity:0.5;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
+ }
