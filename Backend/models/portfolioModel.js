@@ -46,7 +46,7 @@ const techSchema=new mongoose.Schema({
 })
 
 const experienceSchema=new mongoose.Schema({
-    title:{
+role:{
         type:String,
         required:true
     },
@@ -60,6 +60,10 @@ const experienceSchema=new mongoose.Schema({
     },
     description:{
         type:String,
+        required:true
+    },
+    technologies:{
+        type:Array,
         required:true
     }
 })
@@ -87,7 +91,7 @@ const projectSchema=new mongoose.Schema({
     }
 })
 
-const contactSchema=new mongooseSchema({
+const contactSchema=new mongoose.Schema({
     greetText:{
         type:String,
         required:true
@@ -106,10 +110,10 @@ const contactSchema=new mongooseSchema({
     }
 })
 
-export const Intro=mongoose.model('Intro',introSchema);
-export const About=mongoose.model('About',aboutSchema);
-export const Experience=mongoose.model('About',experienceSchema);
-export const Projects=mongoose.model('About',projectSchema);
-export const Tech=mongoose.model('About',techSchema);
-export const Contact=mongoose.model('About',contactSchema);
+export const intro=mongoose.model('intro',introSchema);
+export const about=mongoose.model('about',aboutSchema);
+export const experiences=mongoose.model('experience',experienceSchema);
+export const projects=mongoose.model('projects',projectSchema);
+export const techs=mongoose.model('techs',techSchema);
+export const contact=mongoose.model('contact',contactSchema);
 

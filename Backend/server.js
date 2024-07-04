@@ -3,9 +3,14 @@ import dotenv from 'dotenv';
 dotenv.config();
 import express from 'express'
 import connection from './config/dbConfig.js';
+import portfolioRoute from './routes/portfolio.js'
+
+
+
 
 const app=express()
 connection();
+app.use("/api/portfolio",portfolioRoute)
 
 // mongoose.connect('mongodb+srv://singhsupriya90033:jEgG6kZgxY7T1sWk@mydata.hmwy570.mongodb.net/?retryWrites=true&w=majority&appName=MyData'
 //    );
@@ -23,6 +28,8 @@ app.get('/',(req,res)=>{
 })
 
 const port=process.env.PORT || 3000;
+
+
 
 app.listen(port,()=>{
     console.log(`serve at http://localhost:${port}`)
