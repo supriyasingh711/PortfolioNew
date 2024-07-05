@@ -4,24 +4,14 @@ dotenv.config();
 import express from 'express'
 import connection from './config/dbConfig.js';
 import portfolioRoute from './routes/portfolio.js'
-
-
-
+import cors from 'cors'
 
 const app=express()
 connection();
-app.use("/api/portfolio",portfolioRoute)
+//using cors to manage cross-site requests
+app.use(cors());
 
-// mongoose.connect('mongodb+srv://singhsupriya90033:jEgG6kZgxY7T1sWk@mydata.hmwy570.mongodb.net/?retryWrites=true&w=majority&appName=MyData'
-//    );
-  
-//   mongoose.connection.once('open', () => {
-//     console.log('Connected to MongoDB Atlas');
-//   });
-  
-//   mongoose.connection.on('error', (err) => {
-//     console.error('MongoDB connection error:', err);
-//   });
+app.use("/api/portfolio",portfolioRoute)
 
 app.get('/',(req,res)=>{
     res.send("server is ready");
