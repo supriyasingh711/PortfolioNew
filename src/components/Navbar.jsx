@@ -2,17 +2,16 @@ import React from 'react'
 import {FaLinkedin} from "react-icons/fa";
 import {FaGithub} from "react-icons/fa";
 import {FaCode} from "react-icons/fa";
-import {PiCloverFill} from "react-icons/pi";
+
 const Navbar = () => {
   return (
-    <nav className=' mb-20 flex items-center justify-between py-6'>
+    <nav className=' mb-20 flex items-center justify-center py-6'>
         <div className='flex flex-shrink-0 items-center'>
-            <a className='flex text-3xl ' href="">S's</a>
         </div>
         <div className='m-8 flex items-center gap-4 text-2xl'>
-            <FaLinkedin/>
-            <FaGithub/>
-            <FaCode/>
+           <a href='www.linkedin.com/in/supriya-singh-741835237'><FaLinkedin /></a> 
+           <a href='https://github.com/supriyasingh711'><FaGithub/></a> 
+           <a href='https://leetcode.com/u/singhsupriya711/'><FaCode/></a> 
         </div>
     </nav>
   )

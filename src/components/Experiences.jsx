@@ -1,8 +1,12 @@
 import React from 'react'
 import { EXPERIENCES } from '../constants'
 import {motion } from 'framer-motion'
-
+import { useSelector } from 'react-redux'
 const Experiences = () => {
+    const [selectedItemIndex,setSelectedItemIndex]=React.useState(0)
+    const {loading,portfolioData}=useSelector(state=>state.root)
+  const {experiences}=portfolioData;
+  
   return (
     <div className='border-b border-neutral-900 pb-4'>
         <motion.h1 
@@ -11,7 +15,7 @@ const Experiences = () => {
         transition={{duration:0.5}}
         className='my-20 text-center text-4xl'>Experiences</motion.h1>
         <div>
-            {EXPERIENCES.map((experience,index)=>(
+            {experiences.map((experience,index)=>(
                 <div key={index} className='mb-8 flex flex-wrap lg:justify-center'>
                     <motion.div
                     whileInView={{opacity:1,x:0}}

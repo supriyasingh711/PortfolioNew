@@ -12,10 +12,10 @@ router.get("/get-portfolio-data", async (req, res) => {
         const experience = await experiences.find();
 
         res.status(200).json({
-            intro: intros,
-            about: abouts,
+            intro: intros[2],
+            about: abouts[0],
             projects: project,
-            contact: contacts,
+            contact: contacts[0],
             experiences: experience,
             techs: tech
         });
