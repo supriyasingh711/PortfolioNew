@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 import express from 'express'
 import connection from './config/dbConfig.js';
-import portfolioRoute from './routes/portfolio.js'
+import portfolioRoute from './routes/portfolioRoutes.js'
 import cors from 'cors'
 
 const app=express()

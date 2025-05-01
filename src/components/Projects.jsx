@@ -1,7 +1,6 @@
 import React from 'react'
 import {motion } from 'framer-motion'
-import p1 from "../assets/projects/p1.jpeg"
-import p2 from "../assets/projects/p2.jpeg"
+
 
 import { useSelector } from 'react-redux'
 const Projects = () => {
@@ -22,7 +21,7 @@ const {projects}=portfolioData;
          whileInView={{opacity:1,x:0}}
          initial={{opacity:0,x:-100}}
          transition={{duration:0.5}}
-         className='w-full lg:w-1/4'>
+         className='w-full '>
           
         </motion.div>
         <motion.div 
