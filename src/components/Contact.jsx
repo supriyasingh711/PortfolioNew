@@ -12,7 +12,7 @@ const {greetText,address,emailId,phoneNumber}=contact
         whileInView={{opacity:1,y:0}}
         initial={{opacity:0,y:-100}}
         transition={{duration:0.5}}
-        className='my-10 text-center text-4xl'>{greetText}</motion.h1>
+        className='my-20 text-center text- bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent'>{greetText}</motion.h1>
         <div className='text-center tracking-tighter'>
 
             <motion.p 
@@ -24,12 +24,12 @@ const {greetText,address,emailId,phoneNumber}=contact
             whileInView={{opacity:1,x:0}}
             initial={{opacity:0,x:-100}}
             transition={{duration:0.5}}
-            className='my-4'>{phoneNumber}</motion.p>
+            className='my-4'>Join my <a className='text-purple-600'  href='https://www.linkedin.com/in/supriya-singh-741835237'>LinkedIn</a> fam!</motion.p>
             <motion.a 
             whileInView={{opacity:1,x:0}}
             initial={{opacity:0,x:-100}}
             transition={{duration:0.5}}
-            href="singhsupriya90033@gmail.com">{emailId}</motion.a>
+            href="singhsupriya711@gmail.com">{emailId}</motion.a>
             
         </div>
         </div>

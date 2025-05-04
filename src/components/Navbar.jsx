@@ -9,7 +9,7 @@ const Navbar = () => {
         <div className='flex flex-shrink-0 items-center'>
         </div>
         <div className='m-8 flex items-center gap-4 text-2xl'>
-           <a href='www.linkedin.com/in/supriya-singh-741835237'><FaLinkedin /></a> 
+           <a href='https://www.linkedin.com/in/supriya-singh-741835237'><FaLinkedin /></a> 
            <a href='https://github.com/supriyasingh711'><FaGithub/></a> 
            <a href='https://leetcode.com/u/singhsupriya711/'><FaCode/></a> 
         </div>

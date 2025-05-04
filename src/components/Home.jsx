@@ -8,6 +8,7 @@ import Experiences from './Experiences'
 import Projects from './Projects'
 import Contact from './Contact'
 import { useSelector } from 'react-redux'
+import UniqueFeatures from './UniqueFeatures'
 
 const Home = () => {
   const {loading,portfolioData}=useSelector(state=>state.root)
@@ -30,6 +31,7 @@ const Home = () => {
         <Technologies/>
 
         <Projects/>
+        <UniqueFeatures/>
         <Contact/>
         </div>
 
